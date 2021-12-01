@@ -1,0 +1,514 @@
+@import "font-faces.css";
+:root {
+  --icon-margin: 0 0.2rem 0 0.2rem;
+  --blue-gradient: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  --nav-bar-height: 4.65rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+a.nav {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+ul {
+  list-style: none;
+}
+.button {
+  background: var(--blue-gradient);
+  color: rgb(41, 40, 38);
+  font-family: "Lexend-deca";
+}
+.horizontal-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pic {
+  padding: 0;
+  overflow: hidden;
+}
+.pic img {
+  height: 100%;
+  transition: all 0.75s ease-out;
+}
+.pic img:hover {
+  transform: scale(1.3);
+}
+
+
+.nav-bar {
+  position: relative;
+  padding: 0 2rem 0 2rem;
+  justify-content: space-between;
+  display: flex;
+}
+.brand {
+  margin: 1rem 2.5rem 1rem 0;
+}
+.brand::before {
+  display: block;
+  height: 100%;
+  width: auto;
+  content: "Blooger";
+  color: rgb(75, 75, 75);
+  font-size: 1.6rem;
+  font-family: "Lexend-deca";
+  box-sizing: border-box;
+}
+
+.nav-item {
+  color: rgb(75, 75, 75);
+  font-family: "Abel";
+  font-size: 1.1rem;
+}
+.nav-item:hover {
+  background-color: #086066;
+  color: white;
+}
+
+.nav-logos {
+  height: 40%;
+}
+.nav-logos a {
+  text-decoration: none;
+  color: rgb(75, 75, 75);
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+}
+
+.link-icon:hover::before {
+  color: rgb(123, 170, 172);
+}
+.fb-icon::before {
+  font-family: "Font-Awesome";
+  content: "\f39e";
+  margin: var(--icon-margin);
+}
+.ig-icon::before {
+    font-family: "Font-Awesome";
+    content: "\f16d";
+    margin: var(--icon-margin);
+}
+.tw-icon::before {
+    font-family: "Font-Awesome";
+    content: "\f099";
+    margin: var(--icon-margin);
+}
+.yt-icon::before {
+    font-family: "Font-Awesome";
+    content: "\f167";
+    margin: var(--icon-margin);
+}
+
+.nav-list {
+  cursor: pointer;
+}
+.nav-list::before {
+  font-family: "Font-Awesome";
+  font-weight: 900;
+  content: "\f0c9";
+  font-size: 1.4rem;
+  color: rgb(75, 75, 75);
+}
+
+
+
+
+
+.site-title {
+  overflow: auto;
+  background-image: url(../assets/Background-image.png);
+  background-size: cover;
+  /* background-position: center; */
+  height: 50rem;
+  width: 100%;
+}
+.site-title .subtitle {
+  display: block;
+  width: 100%;
+  margin: 10.3rem 0 0 0;
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+  font-family: "Abel";
+  font-weight: 700;
+}
+.site-title .title {
+  display: block;
+  margin: 0.32rem 0 0 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  font-family: "Lexend-deca";
+  font-weight: 700;
+}
+.site-title div {
+  margin: 2.1rem 0 0 0;
+  width: 100%;
+  text-align: center;
+}
+.site-title div button {
+  border: 0.05rem solid transparent;
+  font-size: 0.97rem;
+  padding: 1em 3em;
+  border-radius: 1.6em;
+}
+.site-title div button:hover {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+
+
+
+
+.main {
+  width: 100%;
+  overflow: hidden;
+  background-image: url(../assets/Abract01.png);
+  background-size: 63vw auto;
+  background-repeat: no-repeat;
+  background-position: right 8rem;
+}
+
+.carousel {
+  padding: 2rem;
+  margin-bottom: 10rem;
+}
+
+.carousel .blogs {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel .blogs .blog {
+  width: 80%;
+  margin: 4rem auto;
+  box-shadow: 0 0 2rem 0.05rem rgb(66, 66, 66, 0.3);
+  text-align: center;
+}
+.carousel .blogs .blog img {
+  width: 100%;
+}
+.carousel .blogs .blog title {
+  display: block;
+  margin-top: 10%;
+  font-size: 1.3rem;
+  font-family: "Abel";
+  font-weight: 700;
+}
+.carousel .blogs .blog button {
+  padding: 0.7em 1.9em;
+  border-radius: 2em;
+  margin-top: 4%;
+  font-size: 1rem;
+}
+
+.carousel .blogs .blog .time {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-family: "Abel";
+  padding-bottom: 2rem;
+}
+
+.carousel .owl-prev *{
+  display: none;
+}
+.carousel .owl-next *{
+  display: none;
+}
+.carousel .owl-prev::before {   
+  display: inline; 
+  content: "\f30a";
+  font-family: "Font-Awesome";
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+.carousel .owl-next::before { 
+  display: inline;   
+  content: "\f30b";
+  font-family: "Font-Awesome";
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.owl-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.content {
+  box-sizing: border-box;
+  padding: 0 2.6rem;
+}
+.content .post {
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+}
+.content .post .pic {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.content .post .pic img {
+  width: 100%;
+  height: auto;
+}
+.content .post .pic .info {
+  background: var(--blue-gradient);
+  box-sizing: border-box;
+  position: absolute;
+  padding: 1rem;
+  left: 0;
+  bottom: 0.2rem;
+  font-family: "Abel";
+  color: rgb(75, 75, 75);
+}
+.content .post .pic .info * {
+  margin: 0 0.5rem;
+}
+.content .post .pic .info .admin::before {
+  content: "\f007";
+  font-family: "Font-Awesome";
+  font-weight: 900;
+}
+.content .post .pic .info .date::before {
+  content: "\f073";
+  font-family: "Font-Awesome";
+  font-weight: 900;
+}
+
+
+.content .post a {
+  font-family: "anton";
+  font-size: 1.5rem;
+  color:rgb(75, 75, 75);
+}
+.content .post p {
+  font-family: "Lexend-deca";
+  color: rgba(95, 95, 95, 0.712)
+}
+.content .post .read-more {
+  background: var(--blue-gradient);
+  padding: 0.75rem 1.5rem;
+  font-family: "Livvic";
+  font-size: 1rem;
+  color: black;
+}
+.content .post .read-more::after {
+  margin-left: 0.3rem;
+  font-family: "Font-Awesome";
+  content: "\f061";
+  font-weight: 900;
+}
+
+
+.pagination {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.pagination div .prev, 
+.pagination div .next {
+  text-decoration: none;
+  margin: 0 0.5rem;
+  color: rgb(73, 77, 90);
+}
+.pagination div .prev::before{
+  content: "\f053";
+  font-family: "Font-Awesome";
+  font-weight: 900;
+}
+.pagination div .next::before{
+  content: "\f054";
+  font-family: "Font-Awesome";
+  font-weight: 900;
+}
+.pagination div .pages {
+  text-decoration: none;
+  margin: 0.2rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 2rem;
+  box-sizing: border-box;
+  background-color:rgb(73, 77, 90);
+  font-size: 1rem;
+  font-family: "Lexend-deca";
+  color: white;
+}
+
+.sidebar section {
+  margin-bottom: 6rem;
+}
+
+.sidebar h2{
+  display: block;
+  font-family: "Lexend-deca";
+  margin: 0;
+}
+
+.sidebar section .category ul {
+  padding: 0.8rem 1.3rem 0.8rem 1.2rem;
+  margin: 0;
+}
+
+.sidebar section .category ul li {
+  padding: 0.4rem 1rem;
+  background: var(--blue-gradient);
+  border-radius: 2rem;
+  margin: 0.8rem 0;
+}
+
+.sidebar section .category ul li a {
+  font-family: "Livvic";
+}
+.sidebar section .category ul li span {
+  float: right;
+  font-family: "Abel";
+}
+
+
+
+
+.sidebar .popular-posts .container {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2rem;
+}
+.sidebar .popular-posts .container img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+.sidebar .popular-posts .container a {
+  text-decoration: none;
+  font-family: "Anton";
+  color: rgb(95, 95, 95);
+}
+
+.sidebar-newsletter div{
+  margin: 1.3rem 1rem 0 1.4rem;
+}
+
+.sidebar-newsletter div input{
+  height: 2.5rem;
+  width: 70%;
+  margin: 0.5rem;
+  font-size: 1rem;
+  font-family: "Lexend-deca";
+  padding-left: 0.6rem;
+}
+.sidebar-newsletter div button{
+  padding: 0.85rem 30%;
+  margin: 0.5rem;
+  background: var(--blue-gradient);
+  font-family: "Livvic";
+  color:rgb(41, 40, 38);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.popular-tags h2 {
+  margin-bottom: 1.5rem;
+}
+.tags {
+  padding: 1rem;
+}
+.tags span {
+  display: inline-block;
+  margin: 0.3rem 0.5rem;
+  background: var(--blue-gradient);
+  font-family: "Abel";
+  padding: 0.5rem 0.8rem;
+  border-radius: 3rem;
+  box-sizing: border-box;
+}
+
+
+
+
+.footer {
+  background-color: rgb(17, 17, 17);
+  position: relative;
+  padding: 1rem;
+}
+.footer .container {
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.footer h2 {
+  color: white;
+  font-family: "Lexend-deca";
+}
+.footer p {
+  color:rgb(95, 95, 95);
+  font-family: "Lexend-deca";
+}
+.follow_us span {
+  color: white;
+}
+.footer .email-and-button {
+  width: 13rem;
+  position: relative;
+}
+.footer input {
+  margin-top: 0.3rem;
+  background: black;
+  border: none;
+  padding-left: 0.5rem;
+  height: 2rem;
+  font-family: "Lexend-deca";
+  font-size: 1rem;
+  color: white;
+}
+.footer .email-button {
+  position: absolute;
+  float: right;
+  padding: 0.8rem 0.7rem;
+  background: var(--blue-gradient);
+}
+.footer .email-button::before {
+  content: "\f054";
+  font-family: "Font-Awesome";
+  font-weight: 900;
+  font-size: 1rem;
+}
+.instagram .instagram-row {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.instagram .instagram-row img {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: auto;
+}
+
+.moveup-button {
+  position: absolute;
+  right: 4rem;
+  top: 50%;
+}
+.moveup-button::before {
+  color: rgb(41, 83, 97);
+  content: "\f0aa";
+  font-family: "Font-Awesome";
+  font-weight: 900;
+  font-size: 2rem;
+}

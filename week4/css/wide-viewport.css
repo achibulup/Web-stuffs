@@ -1,0 +1,29 @@
+.nav-bar {
+  flex-direction: row;
+  height: var(--nav-bar-height);
+}
+.nav-items {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  overflow: hidden;
+}
+.nav-items .nav-item {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 1.6rem 1rem;
+}
+.nav-logos {
+  padding: 1.4rem 0;
+}
+.nav-list {
+  display: none;
+}
+.content {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.footer .container {
+  grid-template-columns: repeat(2, 1fr);
+}

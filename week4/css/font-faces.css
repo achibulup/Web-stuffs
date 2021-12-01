@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Lexend-deca";
+  src: url(../fonts/Lexend_Deca/LexendDeca-Regular.ttf);
+}
+@font-face {
+  font-family: "Livvic";
+  src: url(../fonts/Livvic/Livvic-Regular.ttf);
+}
+@font-face {
+  font-family: "Abel";
+  src: url(../fonts/Abel/Abel-Regular.ttf);
+}
+@font-face {
+    font-family: "Anton";
+    src: url('../fonts/Anton/Anton-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Font-Awesome";
+  font-weight: normal;
+  src: url("../fonts/webfonts/fa-brands-400.eot");
+  src: url("../fonts/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), 
+       url("../fonts/webfonts/fa-brands-400.woff2") format("woff2"), 
+       url("../fonts/webfonts/fa-brands-400.woff") format("woff"), 
+       url("../fonts/webfonts/fa-brands-400.ttf") format("truetype"), 
+       url("../fonts/webfonts/fa-brands-400.svg#fontawesome") format("svg"); 
+}
+
+@font-face {
+  font-family: "Font-Awesome";
+  font-weight: 400;
+  src: url("../fonts/webfonts/fa-regular-400.eot");
+  src: url("../fonts/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), 
+       url("../fonts/webfonts/fa-regular-400.woff2") format("woff2"), 
+       url("../fonts/webfonts/fa-regular-400.woff") format("woff"), 
+       url("../fonts/webfonts/fa-regular-400.ttf") format("truetype"), 
+       url("../fonts/webfonts/fa-regular-400.svg#fontawesome") format("svg"); 
+}
+
+@font-face {
+  font-family: "Font-Awesome";
+  font-weight: 900;
+  src: url("../fonts/webfonts/fa-solid-900.eot");
+  src: url("../fonts/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), 
+       url("../fonts/webfonts/fa-solid-900.woff2") format("woff2"), 
+       url("../fonts/webfonts/fa-solid-900.woff") format("woff"), 
+       url("../fonts/webfonts/fa-solid-900.ttf") format("truetype"), 
+       url("../fonts/webfonts/fa-solid-900.svg#fontawesome") format("svg"); 
+}
