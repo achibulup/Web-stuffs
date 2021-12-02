@@ -1,8 +1,4 @@
 
-function scrollup() {
-    $("html, body")
-        .animate({ scrollTop: 0}, 1000);
-}
 
 $(document).ready(function() {
 
@@ -34,13 +30,7 @@ $(document).ready(function() {
 
 
     $('.moveup-button').click(function () {
-        document.documentElement.scrollTo(
-            {
-                top: 0,
-                duration: 3000,
-                behavior: "smooth"
-            }
-        );
+        document.documentElement.scrollTo({top:0});
     });
 
     AOS.init();
