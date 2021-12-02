@@ -34,13 +34,11 @@ $(document).ready(function() {
 
 
     $('.moveup-button').click(function () {
-        $('html, body').animate(
+        document.documentElement.scrollTo(
             {
-                scrollTop: 0
-            }, 
-            {
-              duration: 750,
-              easing: "linear"
+                top: 0,
+                duration: 3000,
+                behavior: "smooth"
             }
         );
     });
